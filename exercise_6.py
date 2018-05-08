@@ -45,4 +45,4 @@ def polindrom(s):
         return "YES"
 
 
-print(polindrom("m121m"))
+print(polindrom("mystring1Gni rts ym"))

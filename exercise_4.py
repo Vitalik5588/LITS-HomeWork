@@ -21,7 +21,7 @@ def clean_list(l):                    # Розбиває вхідні дані �
     return(output_list)
 
 def counter(a , b):
-    if isinstance(a, int) and isinstance(b, int):
+    if a >= 0 and b >= 0 and isinstance(a, int) and isinstance(b, int):
         a = str(a)
         b = str(b)
         con = 0
@@ -29,7 +29,7 @@ def counter(a , b):
             if i in clean_list(a):          # і рахує їх кількість
                 con+=1
         return(con)
-    else:
-        return "TypeError"
 
+    else:
+        raise TypeError
 print(counter(1233211, 12128))
